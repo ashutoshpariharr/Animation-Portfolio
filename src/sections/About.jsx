@@ -6,9 +6,12 @@ import { useState, useRef, useEffect } from 'react';
 import Button from '../components/Button.jsx';
 import { iconSlugs } from '../constants/index.js';
 import IconCloud from '../components/UI/IconCloud.jsx';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
+
+  const {t} = useTranslation();
 
   const handleCopy = () => {
     navigator.clipboard.writeText('ashutoshparihar512@gmail.com');
@@ -131,7 +134,8 @@ const About = () => {
             <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">My Passion for Coding</p>
+              {/* <p className="grid-headtext">My Passion for Coding</p> */}
+              <p className="grid-headtext">{t("welcome")}</p>
               <p className="grid-subtext">
                 I love solving problems and building things through code. Programming isn&apos;t just my
                 profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.

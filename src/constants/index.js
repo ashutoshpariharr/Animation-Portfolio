@@ -18,7 +18,7 @@ export const navLinks = [
     id: 4,
     name: 'Contact',
     href: '#contact',
-    // style: 'bg-customColor p-2 text-sm rounded-md',
+    // style: 'bg-customColor p-2.5 text-sm rounded-md',
   },
 ];
 
@@ -313,4 +313,4 @@ export const iconSlugs = [
 ];
 
 
-export const languages = ["English", "German", "French", "Spanish"];
+// export const languages = ["English", "German", "French", "Spanish"];
