@@ -1,5 +1,11 @@
 {
-    "welcome": "Bienvenue in fr",
-    "description": "Ceci est une description en français."
+    "heading_text": "Bonjour, je suis Ashutosh",
+    "description_hero": "Produits de construction et marques",
+    "button_text": "Travaillons ensemble",
+    "about_text": "Bonjour, je suis Ashutosh Parihar",
+    "about_description": "Avec 1,5 ans d'expérience, j'ai perfectionné mes compétences en développement frontend et backend, ainsi qu'en SGBD, python, devops, etc. pour créer des sites web dynamiques et réactifs.",
+    "skills_text": "Pile technologique",
+    "skills_description": "Je me spécialise dans une variété de langages, de cadres et d'outils qui me permettent de construire des applications robustes et évolutives.",
+    "skills_globe": "Je suis très flexible en ce qui concerne les fuseaux horaires et les lieux de travail."
   }
   

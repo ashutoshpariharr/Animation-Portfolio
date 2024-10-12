@@ -1,5 +1,11 @@
 {
-    "welcome": "Welcome In enlish",
-    "description": "This is an English description."
+    "heading_text": "Hi, I am Ashutosh",
+    "description_hero": "Building Products & Brands",
+    "button_text": "Let's work together",
+    "about_text": "Hi, I’m Ashutosh Parihar",
+    "about_description": "With 1.5 years of experience, I have honed my skills in both frontend and backend dev, as well as in DBMS, python, devops etc. creating dynamic and responsive websites.",
+    "skills_text": "Tech Stack",
+    "skills_description": "I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications",
+    "skills_globe": "I’m very flexible with time zone communications & locations"
   }
   

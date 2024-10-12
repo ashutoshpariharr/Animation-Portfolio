@@ -71,10 +71,9 @@ const About = () => {
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Hi, I’m Ashutosh Parihar</p>
+              <p className="grid-headtext">{t("about_text")}</p>
               <p className="grid-subtext">
-                With 1.5 years of experience, I have honed my skills in both frontend and backend dev, as well as in
-                DBMS, python, devops etc. creating dynamic and responsive websites.
+                {t("about_description")}
               </p>
             </div>
           </div>
@@ -86,10 +85,9 @@ const About = () => {
             <IconCloud iconSlugs={iconSlugs} />
 
             <div>
-              <p className="grid-headtext">Tech Stack</p>
+              <p className="grid-headtext">{t("skills_text")}</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+                {t("skills_description")}
               </p>
             </div>
           </div>
@@ -118,7 +116,7 @@ const About = () => {
             </motion.div>
 
             <div>
-              <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
+              <p className="grid-headtext">{t("skills_globe")}</p>
               <p className="grid-subtext">
                 I&apos;m based in freelancing projects, Croatia and open to remote work worldwide
               </p>
