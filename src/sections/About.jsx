@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   const handleCopy = () => {
     navigator.clipboard.writeText('ashutoshparihar512@gmail.com');
@@ -71,10 +71,8 @@ const About = () => {
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">{t("about_text")}</p>
-              <p className="grid-subtext">
-                {t("about_description")}
-              </p>
+              <p className="grid-headtext">{t('about_text')}</p>
+              <p className="grid-subtext">{t('about_description')}</p>
             </div>
           </div>
         </div>
@@ -85,10 +83,8 @@ const About = () => {
             <IconCloud iconSlugs={iconSlugs} />
 
             <div>
-              <p className="grid-headtext">{t("skills_text")}</p>
-              <p className="grid-subtext">
-                {t("skills_description")}
-              </p>
+              <p className="grid-headtext">{t('skills_text')}</p>
+              <p className="grid-subtext">{t('skills_description')}</p>
             </div>
           </div>
         </div>
@@ -99,8 +95,7 @@ const About = () => {
               className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center"
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
-              transition={{ duration: 1, ease: 'easeInOut' }}
-            >
+              transition={{ duration: 1, ease: 'easeInOut' }}>
               <Globe
                 ref={globeRef}
                 height={326}
@@ -116,9 +111,10 @@ const About = () => {
             </motion.div>
 
             <div>
-              <p className="grid-headtext">{t("skills_globe")}</p>
+              <p className="grid-headtext">{t('skills_globe')}</p>
               <p className="grid-subtext">
-                I&apos;m based in freelancing projects, Croatia and open to remote work worldwide
+                {/* I&apos;m based in freelancing projects, Croatia and open to remote work worldwide */}
+                {t('globe_description')}
               </p>
               <a href="#contact">
                 <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
@@ -133,16 +129,9 @@ const About = () => {
 
             <div>
               {/* <p className="grid-headtext">My Passion for Coding</p> */}
-              <p className="grid-headtext">{t("welcome")}</p>
-              <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
-              </p>
+              <p className="grid-subtext">{t('about_passions_codings')}</p>
               <p className="grid-subtext mt-4">
-                Dynamic Full Stack Developer with over 1.5 year of experience delivering innovative and scalable web
-                solutions. Proven track record of leading cross-functional teams, enhancing user engagement by 70%, and
-                optimizing system performance. Passionate about learning and applying modern technologies, with 20+
-                projects completed. Continuously advancing skills through Udemy and self-driven learning
+                {t("about_passion_description")}
               </p>
             </div>
           </div>
@@ -157,7 +146,7 @@ const About = () => {
             />
 
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
+              <p className="grid-subtext text-center">{t("contact_me")}</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
                 <p className="lg:text-1xl md:text-xl font-medium text-gray_gradient text-white">

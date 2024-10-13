@@ -5,14 +5,18 @@ import { OrbitControls } from '@react-three/drei';
 import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
 import { workExperiences } from '../constants/index.js';
+import { useTranslation } from 'react-i18next';
 
 const WorkExperience = () => {
+
+  const {t} = useTranslation()
+
   const [animationName, setAnimationName] = useState('idle');
 
   return (
     <section className="c-space my-20" id="work">
       <div className="w-full text-white-600">
-        <p className="head-text">My Work Experience</p>
+        <p className="head-text">{t("work_expireance")}</p>
 
         <div className="work-container">
           <div className="work-canvas">
