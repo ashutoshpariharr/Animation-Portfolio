@@ -1,11 +1,19 @@
+import { useTranslation } from 'react-i18next';
 import VelocityScroll from '../components/UI/VelocityScroll.jsx';
 import { clientReviews } from '../constants/index.js';
 
 const Clients = () => {
+  // Deffineing the translation
+  const { t } = useTranslation();
+
   return (
     <section className="c-space my-20">
-      <h3 className="head-text">Hear from My Clients</h3>
-      <VelocityScroll default_velocity={1} className="text-3xl text-white-700 mt-8" text="I’ve had the pleasure of working with amazing clients across different industries. Their feedback highlights my dedication to delivering high-quality, tailored solutions"  /> 
+      <h3 className="head-text">{t('client_section')}</h3>
+      <VelocityScroll
+        default_velocity={1}
+        className="text-3xl text-white-700 mt-8"
+        text={`${t("marqui_text")}`}
+      />
 
       <div className="client-container">
         {clientReviews.map((item) => (

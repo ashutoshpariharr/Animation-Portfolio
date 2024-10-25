@@ -1,11 +1,31 @@
 {
-    "heading_text": "Hallo, ich bin Ashutosh",
-    "description_hero": "Bauprodukte & Marken",
-    "button_text": "Lassen Sie uns zusammenarbeiten",
-    "about_text": "Hallo, ich bin Ashutosh Parihar",
-    "about_description": "Mit 1,5 Jahren Erfahrung habe ich meine Fähigkeiten in der Frontend- und Backend-Entwicklung, sowie DBMS, Python, Devops, etc. verfeinert, um dynamische und reaktionsfähige Websites zu erstellen.",
-    "skills_text": "Technologie-Stapel",
-    "skills_description": "Ich habe mich auf eine Vielzahl von Sprachen, Frameworks und Tools spezialisiert, mit denen ich robuste und skalierbare Anwendungen erstellen kann.",
-    "skills_globe": "Ich bin sehr flexibel in Bezug auf Zeitzonen-Kommunikation und Standorte"
-  }
-  
+  "heading_text": "Hallo, ich bin Ashutosh",
+  "description_hero": "Bauprodukte & Marken",
+  "button_text": "Lassen Sie uns zusammenarbeiten",
+  "about_text": "Hallo, ich bin Ashutosh Parihar",
+  "about_description": "Mit 1,5 Jahren Erfahrung habe ich meine Fähigkeiten in der Frontend- und Backend-Entwicklung, sowie DBMS, Python, Devops, etc. verfeinert, um dynamische und reaktionsfähige Websites zu erstellen.",
+  "skills_text": "Technologie-Stapel",
+  "skills_description": "Ich habe mich auf eine Vielzahl von Sprachen, Frameworks und Tools spezialisiert, mit denen ich robuste und skalierbare Anwendungen erstellen kann.",
+  "skills_globe": "Ich bin sehr flexibel in Bezug auf Zeitzonen-Kommunikation und Standorte",
+  "globe_description": "Ich bin in Kroatien ansässig und offen für Fernarbeit weltweit.",
+  "about_passions_codings": "Ich liebe es, Probleme zu lösen und Dinge mit Hilfe von Code zu entwickeln. Programmieren ist nur mein Beruf - es ist meine Leidenschaft. Ich genieße es, neue Technologien zu erforschen und meine Fähigkeiten zu verbessern.",
+  "about_passion_description": "Dynamischer Full-Stack-Entwickler mit über 1,5 Jahren Erfahrung in der Bereitstellung innovativer und skalierbarer Web-Lösungen. Nachgewiesene Erfolgsbilanz bei der Leitung funktionsübergreifender Teams, Steigerung der Benutzerbindung um 70% und Optimierung der Systemleistung. Leidenschaftlich beim Erlernen und Anwenden moderner Technologien, mit mehr als 20 abgeschlossenen Projekten. Kontinuierliche Verbesserung der Fähigkeiten durch Udemy und selbstgesteuertes Lernen",
+  "contact_me": "kontaktieren Sie mich",
+  "project_section": "Meine ausgewählten Arbeiten",
+  "project_link": "Live-Site prüfen",
+  "client_section": "Hören Sie von meinen Kunden",
+  "marqui_text": "Ich hatte das Vergnügen, mit erstaunlichen Kunden aus verschiedenen Branchen zusammenzuarbeiten. Ihr Feedback unterstreicht mein Engagement, hochwertige, maßgeschneiderte Lösungen zu liefern.",
+  "work_expireance": "Meine Arbeitserfahrung",
+  "contact_talk": "Lassen Sie uns reden",
+  "contact_description": "Ganz gleich, ob Sie eine neue Website erstellen, Ihre bestehende Plattform verbessern oder ein einzigartiges Projekt ins Leben rufen möchten, ich bin für Sie da.",
+
+  "contact_form_name": "Vollständiger Name",
+  "contact_form_email": "E-Mail Adresse",
+  "contact_form_message": "Ihre Nachricht",
+  "contact_form_submit": "Nachricht senden",
+  "contact_form_sending": "Ich schicke...",
+  "placeholder_message": "Teilen Sie uns Ihre Gedanken oder Anfragen mit...",
+  "footer_term": "Bedingungen und Konditionen",
+  "footer_policy": "Datenschutzbestimmungen",
+   "reserved_text": "Alle Rechte vorbehalten"
+}

@@ -1,11 +1,31 @@
 {
-    "heading_text": "Bonjour, je suis Ashutosh",
-    "description_hero": "Produits de construction et marques",
-    "button_text": "Travaillons ensemble",
-    "about_text": "Bonjour, je suis Ashutosh Parihar",
-    "about_description": "Avec 1,5 ans d'expérience, j'ai perfectionné mes compétences en développement frontend et backend, ainsi qu'en SGBD, python, devops, etc. pour créer des sites web dynamiques et réactifs.",
-    "skills_text": "Pile technologique",
-    "skills_description": "Je me spécialise dans une variété de langages, de cadres et d'outils qui me permettent de construire des applications robustes et évolutives.",
-    "skills_globe": "Je suis très flexible en ce qui concerne les fuseaux horaires et les lieux de travail."
-  }
-  
+  "heading_text": "Bonjour, je suis Ashutosh",
+  "description_hero": "Produits de construction et marques",
+  "button_text": "Travaillons ensemble",
+  "about_text": "Bonjour, je suis Ashutosh Parihar",
+  "about_description": "Avec 1,5 ans d'expérience, j'ai perfectionné mes compétences en développement frontend et backend, ainsi qu'en SGBD, python, devops, etc. pour créer des sites web dynamiques et réactifs.",
+  "skills_text": "Pile technologique",
+  "skills_description": "Je me spécialise dans une variété de langages, de cadres et d'outils qui me permettent de construire des applications robustes et évolutives.",
+  "skills_globe": "Je suis très flexible en ce qui concerne les fuseaux horaires et les lieux de travail.",
+  "globe_description": "Je suis basé en Croatie et je suis ouvert au travail à distance dans le monde entier",
+  "about_passions_codings": "J'adore résoudre des problèmes et construire des choses par le biais du code. La programmation n'est pas seulement mon métier, c'est ma passion. J'aime explorer de nouvelles technologies et améliorer mes compétences.",
+  "about_passion_description": "Développeur Full Stack dynamique avec plus d'un an et demi d'expérience dans la livraison de solutions web innovantes et évolutives. Il a fait ses preuves en dirigeant des équipes interfonctionnelles, en améliorant l'engagement des utilisateurs de 70% et en optimisant les performances du système. Passionné par l'apprentissage et l'application des technologies modernes, avec plus de 20 projets réalisés. Amélioration continue des compétences grâce à Udemy et à l'auto-apprentissage.",
+  "contact_me": "Contactez-moi",
+  "project_section": "Ma sélection de travaux",
+  "project_link": "Vérifier le site en direct",
+  "client_section": "Témoignages de mes clients",
+  "marqui_text": "J'ai eu le plaisir de travailler avec des clients extraordinaires dans différents secteurs d'activité. Leurs commentaires témoignent de mon engagement à fournir des solutions personnalisées de grande qualité.",
+  "work_expireance": "Mon expérience professionnelle",
+  "contact_talk": "Parlons-en",
+  "contact_description": "Que vous souhaitiez créer un nouveau site web, améliorer votre plateforme existante ou donner vie à un projet unique, je suis là pour vous aider",
+
+  "contact_form_name" : "Nom complet",
+  "contact_form_email" : "Adresse électronique",
+  "contact_form_message" : "Votre message",
+  "contact_form_submit" : "Envoyer le message",
+  "contact_form_sending": "Envoi...",
+  "placeholder_message": "Faites part de vos réflexions ou de vos demandes...",
+  "footer_term": "Conditions générales d'utilisation",
+  "footer_policy": "Politique de confidentialité",
+   "reserved_text": "Tous droits réservés"
+}

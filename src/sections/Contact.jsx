@@ -3,8 +3,12 @@ import { useRef, useState } from 'react';
 
 import useAlert from '../hooks/useAlert.js';
 import Alert from '../components/Alert.jsx';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+
+  const {t} = useTranslation()
+
   const formRef = useRef();
 
   const { alert, showAlert, hideAlert } = useAlert();
@@ -71,15 +75,14 @@ const Contact = () => {
         <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" />
 
         <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
+          <h3 className="head-text">{t("contact_talk")}</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
+            {t("contact_description")}
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
             <label className="space-y-3">
-              <span className="field-label">Full Name</span>
+              <span className="field-label">{t("contact_form_name")}</span>
               <input
                 type="text"
                 name="name"
@@ -92,7 +95,7 @@ const Contact = () => {
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Email address</span>
+              <span className="field-label">{t("contact_form_email")}</span>
               <input
                 type="email"
                 name="email"
@@ -105,7 +108,7 @@ const Contact = () => {
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Your message</span>
+              <span className="field-label">{t("contact_form_message")}</span>
               <textarea
                 name="message"
                 value={form.message}
@@ -113,12 +116,12 @@ const Contact = () => {
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Share your thoughts or inquiries..."
+                placeholder={`${t("placeholder_message")}`}
               />
             </label>
 
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? `${t("contact_form_sending")}` : `${t("contact_form_submit")}`}
 
               <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
             </button>

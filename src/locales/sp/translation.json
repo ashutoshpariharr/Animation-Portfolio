@@ -1,11 +1,31 @@
 {
-    "heading_text": "Hola, soy Ashutosh",
-    "description_hero": "Productos y marcas para la construcción",
-    "button_text": "Trabajemos juntos",
-    "about_text": "Hola, soy Ashutosh Parihar",
-    "about_description":"Con 1,5 años de experiencia, he perfeccionado mis habilidades en desarrollo frontend y backend, así como DBMS, python, devops, etc. para crear sitios web dinámicos y responsivos.",
-    "skills_text": "Pila tecnológica",
-    "skills_description": "Estoy especializado en una gran variedad de lenguajes, frameworks y herramientas que me permiten construir aplicaciones robustas y escalables",
-    "skills_globe": "Soy muy flexible con las comunicaciones de zonas horarias y ubicaciones"
-  }
-  
+  "heading_text": "Hola, soy Ashutosh",
+  "description_hero": "Productos y marcas para la construcción",
+  "button_text": "Trabajemos juntos",
+  "about_text": "Hola, soy Ashutosh Parihar",
+  "about_description": "Con 1,5 años de experiencia, he perfeccionado mis habilidades en desarrollo frontend y backend, así como DBMS, python, devops, etc. para crear sitios web dinámicos y responsivos.",
+  "skills_text": "Pila tecnológica",
+  "skills_description": "Estoy especializado en una gran variedad de lenguajes, frameworks y herramientas que me permiten construir aplicaciones robustas y escalables",
+  "skills_globe": "Soy muy flexible con las comunicaciones de zonas horarias y ubicaciones",
+  "globe_description": "Estoy basado en proyectos freelance, Croacia y abierto al trabajo a distancia en todo el mundo",
+  "about_passions_codings": "Me encanta resolver problemas y construir cosas a través del código. La programación es sólo mi profesión: es mi pasión. Disfruto explorando nuevas tecnologías y mejorando mis habilidades.",
+  "about_passion_description": "Desarrollador Full Stack dinámico con más de 1,5 años de experiencia en la entrega de soluciones web innovadoras y escalables. Experiencia probada liderando equipos multidisciplinares, mejorando el compromiso del usuario en un 70% y optimizando el rendimiento del sistema. Apasionado por el aprendizaje y la aplicación de tecnologías modernas, con más de 20 proyectos completados. Continuamente avanzando habilidades a través de Udemy y el aprendizaje autodirigido.",
+  "contact_me": "Contacte con nosotros",
+  "project_section": "Mi obra seleccionada",
+  "project_link": "Comprobar el sitio en directo",
+  "client_section": "Escuche a mis clientes",
+  "marqui_text": "He tenido el placer de trabajar con clientes increíbles de diferentes sectores. Sus comentarios ponen de relieve mi dedicación a ofrecer soluciones personalizadas de alta calidad.",
+  "work_expireance": "Mi experiencia laboral",
+  "contact_talk": "Hablemos",
+  "contact_description": "Si usted está buscando para construir un nuevo sitio web, mejorar su plataforma existente, o dar vida a un proyecto único, estoy aquí para ayudar a",
+
+  "contact_form_name": "Nombre y apellidos",
+  "contact_form_email": "Dirección de correo electrónico",
+  "contact_form_message": "Su mensaje",
+  "contact_form_submit": "Enviar mensaje",
+  "contact_form_sending": "Enviando...",
+  "placeholder_message": "Comparta sus ideas o preguntas...",
+  "footer_term": "Condiciones generales",
+  "footer_policy": "Política de privacidad",
+   "reserved_text": "Todos los derechos reservados"
+}
