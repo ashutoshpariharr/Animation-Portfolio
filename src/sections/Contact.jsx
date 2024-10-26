@@ -25,8 +25,8 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      "service_2wrsk4i", // Service ID
-      "template_ub4m0al", // Template ID
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       {
         from_name: form.name,
         to_name: 'Ashutosh Parihar',
@@ -34,7 +34,7 @@ const Contact = () => {
         to_email: 'ashutoshparihar512@gmail.com',
         message: form.message,
       },
-      "qytR1dEokTQeeEL_N" // Public Key
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )    
     .then(
       () => {
@@ -52,7 +52,7 @@ const Contact = () => {
             email: '',
             message: '',
           });
-        }, 3000); // Fixed timeout brackets
+        }, 4000);
       },
       (error) => {
         setLoading(false);

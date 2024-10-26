@@ -14,7 +14,7 @@ const About = () => {
   const { t } = useTranslation();
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('ashutoshparihar512@gmail.com');
+    navigator.clipboard.writeText('developerashutosh51@gmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -150,7 +150,7 @@ const About = () => {
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
                 <p className="lg:text-1xl md:text-xl font-medium text-gray_gradient text-white">
-                  ashutoshparihar512@gmail.com
+                developerashutosh51@gmail.com
                 </p>
               </div>
             </div>
