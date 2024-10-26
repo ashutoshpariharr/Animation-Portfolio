@@ -425,6 +425,3 @@ export const iconSlugs = [
   'mui',
   'docker',
 ];
-
-
-// export const languages = ["English", "German", "French", "Spanish"];

@@ -117,7 +117,7 @@ const About = () => {
                 {t('globe_description')}
               </p>
               <a href="#contact">
-                <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                <Button name={t("contact_me")} isBeam containerClass="w-full mt-10" />
               </a>
             </div>
           </div>

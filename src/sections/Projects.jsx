@@ -2,12 +2,12 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
+import { useTranslation } from 'react-i18next';
 import { Center, OrbitControls } from '@react-three/drei';
 
 import { myProjects } from '../constants/index.js';
 import CanvasLoader from '../components/Loading.jsx';
 import DemoComputer from '../components/DemoComputer.jsx';
-import { useTranslation } from 'react-i18next';
 
 const projectCount = myProjects.length;
 
@@ -15,7 +15,7 @@ const Projects = ({ language }) => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
 
   const { t } = useTranslation();
-
+  
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
       if (direction === 'previous') {
@@ -67,7 +67,7 @@ const Projects = ({ language }) => {
                     ? currentProject.desc_fr
                     : currentProject.desc_sp}
             </p>
-            
+
             <p className="animatedText">
               {' '}
               {language === 'en'

@@ -7,15 +7,15 @@ import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
 import { workExperiences } from '../constants/index.js';
 
-const WorkExperience = () => {
+const WorkExperience = ({ language }) => {
   const [animationName, setAnimationName] = useState('idle');
 
-  const {t} = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section className="c-space my-20" id="work">
       <div className="w-full text-white-600">
-        <p className="head-text">{t("work_expireance")}</p>
+        <p className="head-text">{t('work_expireance')}</p>
 
         <div className="work-container">
           <div className="work-canvas">
@@ -49,11 +49,39 @@ const WorkExperience = () => {
                   </div>
 
                   <div className="sm:p-5 px-2.5 py-5">
-                    <p className="font-bold text-white-800">{item.name}</p>
-                    <p className="text-sm mb-5">
-                      {item.pos} -- <span>{item.duration}</span>
+                    {/* <p className="font-bold text-white-800">{item.name}</p> */}
+                    <p className="font-bold text-white-800">
+                      {language === 'en'
+                        ? item.name
+                        : language === 'de'
+                          ? item.name_de
+                          : language === 'fr'
+                            ? item.name_fr
+                            : item.name_sp}
                     </p>
-                    <p className="group-hover:text-white transition-all ease-in-out duration-500">{item.title}</p>
+                    <p className="text-sm mb-5">
+                      {/* {item.pos} -- <span>{item.duration}</span> */}
+                      {item.pos} --{' '}
+                      <span>
+                        {language == 'en'
+                          ? item.duration
+                          : language == 'de'
+                            ? item.duration_de
+                            : language == 'fr'
+                              ? item.duration_fr
+                              : item.duration_sp}
+                      </span>
+                    </p>
+                    {/* <p className="group-hover:text-white transition-all ease-in-out duration-500">{item.title}</p> */}
+                    <p className="group-hover:text-white transition-all ease-in-out duration-500">
+                      {language == 'en'
+                        ? item.title
+                        : language == 'de'
+                          ? item.title_de
+                          : language == 'fr'
+                            ? item.title_fr
+                            : item.title_sp}
+                    </p>
                   </div>
                 </div>
               ))}
