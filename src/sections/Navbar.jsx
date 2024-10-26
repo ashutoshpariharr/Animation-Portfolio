@@ -1,20 +1,9 @@
-import { navLinks } from '../constants/index.js';
-import logoAnimation from '../../public/assets/logo-animation2.mp4';
 import React, { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import LanguageDropdown from '../components/LanguageDropdown.jsx';
 
-const NavItems = ({ onClick = () => {} }) => (
-  <ul className="nav-ul">
-    {navLinks.map((item) => (
-      <li key={item.id} className="nav-li">
-        <a href={item.href} className={`nav-li_a ${item.style}`} onClick={onClick}>
-          {item.name}
-        </a>
-      </li>
-    ))}
-  </ul>
-);
+import { navLinks } from '../constants/index.js';
+import LanguageDropdown from '../components/LanguageDropdown.jsx';
+import logoAnimation from '../../public/assets/logo-animation2.mp4';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +13,31 @@ const Navbar = () => {
 
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
+
+  const [language, setLanguage] = useState('en');
+
+  const handleChildData = (data) => {
+    setLanguage(data);
+  };
+
+  const NavItems = ({ onClick = () => {} }) => (
+    <ul className="nav-ul">
+      {navLinks.map((item) => (
+        <li key={item.id} className="nav-li">
+          <a href={item.href} className={`nav-li_a ${item.style}`} onClick={onClick}>
+            {/* {item.name} */}
+            {language === 'en'
+              ? item.name
+              : language === 'de'
+                ? item.name_de
+                : language === 'fr'
+                  ? item.name_fr
+                  : item.name_sp}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
 
   useMotionValueEvent(scrollYProgress, 'change', (current) => {
     if (typeof current === 'number') {
@@ -75,7 +89,7 @@ const Navbar = () => {
               </button>
             </div> */}
             &apos;&apos;&apos;&apos;&apos;
-            <LanguageDropdown />
+            <LanguageDropdown handleChildData={handleChildData} />
           </nav>
         </div>
       </div>

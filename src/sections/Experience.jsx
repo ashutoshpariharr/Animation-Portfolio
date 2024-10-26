@@ -1,17 +1,16 @@
 import { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
+import { useTranslation } from 'react-i18next';
 import { OrbitControls } from '@react-three/drei';
 
 import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
 import { workExperiences } from '../constants/index.js';
-import { useTranslation } from 'react-i18next';
 
 const WorkExperience = () => {
+  const [animationName, setAnimationName] = useState('idle');
 
   const {t} = useTranslation()
-
-  const [animationName, setAnimationName] = useState('idle');
 
   return (
     <section className="c-space my-20" id="work">

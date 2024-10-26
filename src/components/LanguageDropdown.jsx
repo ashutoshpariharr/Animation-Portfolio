@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
-const LanguageDropdown = () => {
+const LanguageDropdown = ({handleChildData}) => {
   const languages = [
     { code: 'en', name: 'English' },
     { code: 'de', name: 'German' },
@@ -23,6 +23,7 @@ const LanguageDropdown = () => {
     const { code, name } = language;
     setSelectedLanguage(name);
     i18n.changeLanguage(code);
+    handleChildData(code);
     setIsOpen(false);
   };
 

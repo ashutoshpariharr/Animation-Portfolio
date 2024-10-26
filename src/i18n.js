@@ -24,7 +24,7 @@ i18n
         translation : spTranslation
       },
     },
-    lng: 'sp',
+    lng: 'en',
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,
