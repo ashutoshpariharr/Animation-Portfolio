@@ -195,3 +195,33 @@ body {
     transform: rotate(0deg);
   }
 }
+
+
+.chatbot {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+.chat-window {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.message {
+  padding: 5px;
+  margin: 5px 0;
+}
+.message.user {
+  text-align: right;
+  color: blue;
+}
+.message.bot {
+  text-align: left;
+  color: green;
+}
+.chat-input {
+  display: flex;
+  gap: 5px;
+}

@@ -41,19 +41,17 @@ const Navbar = () => {
 
   useMotionValueEvent(scrollYProgress, 'change', (current) => {
     if (typeof current === 'number') {
-      let direction = current - scrollYProgress.getPrevious();
-
+      const direction = current - scrollYProgress.getPrevious();
+  
       if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
+        setVisible(true); // Show navbar when near the top
+      } else if (direction < 0) {
+        setVisible(true); // Scrolling up
       } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        setVisible(false); // Scrolling down
       }
     }
-  });
+  });  
 
   return (
     <motion.header
